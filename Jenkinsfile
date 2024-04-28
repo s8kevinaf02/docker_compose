@@ -8,7 +8,7 @@ pipeline {
         DOCKER_CREDENTIAL_ID = 'docker-hub-credentials'
     }
     parameters {
-        string(name: 'BRANCH_NAME', defaultValue: 's8kevinaf02', description: '')
+        string(name: 'BRANCH_NAME', defaultValue: 'main', description: '')
         string(name: 'APP1_TAG', defaultValue: 'latest', description: '')
         string(name: 'APP2_TAG', defaultValue: 'latest', description: '')
         string(name: 'PORT_ON_DOCKER_HOST', defaultValue: '', description: '')
@@ -89,7 +89,7 @@ pipeline {
         //     steps {
         //         script {
         //             sh """
-        //                 docker login -u thedevopslady -p dckr_pat_D_lEO8hxlSoof91Wn5BRnza2S8Q
+        //                 
         //             """
         //         }
         //     }
